@@ -1,0 +1,27 @@
+{
+  "clients": [],
+  "resourceServers": [],
+  "connections": [
+    {
+      "name": "Username-Password-Authentication",
+      "strategy": "auth0",
+      "enabled_clients": []
+    }
+  ],
+  "emailTemplates": [],
+  "guardianFactors": [],
+  "guardianFactorProviders": [],
+  "guardianFactorTemplates": [],
+  "roles": [],
+  "rules": [],
+  "pages": [],
+  "hooks": [],
+  "actions": [],
+  "triggers": {},
+  "tenant": {
+    "friendly_name": "My Auth0 Tenant",
+    "picture_url": "",
+    "support_email": "",
+    "support_url": ""
+  }
+}
