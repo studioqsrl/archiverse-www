@@ -1,0 +1,5 @@
+{
+  "auth0domain": "YOUR_AUTH0_DOMAIN",
+  "spaClientId": "YOUR_SPA_CLIENT_ID",
+  "apiAudience": "YOUR_API_AUDIENCE"
+}
