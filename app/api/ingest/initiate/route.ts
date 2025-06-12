@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 // import { getSession } from "@auth0/nextjs-auth0"; // Auth0 import removed for now
 import getTemporalClient from "../../../../src/lib/temporal-client"; // Adjusted path
-import { IngestAndProcessDocumentWorkflowInput } from "../../../../../services/temporal-worker/src/workflows"; // Path to workflow input type
 import { nanoid } from "nanoid";
 
 // Define the expected request body structure from the frontend
@@ -37,7 +36,7 @@ export async function POST(req: NextRequest) {
     const client = await getTemporalClient();
 
     // Prepare workflow input
-    const workflowInput: IngestAndProcessDocumentWorkflowInput = {
+    const workflowInput = {
       originalFilename: body.originalFilename,
       contentType: body.contentType,
       size: body.size,
